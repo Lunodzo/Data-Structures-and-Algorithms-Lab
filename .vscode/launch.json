@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [
+        ""
+      ],
+      "stopAtEntry": false,
+      "cwd": "h:/My Drive/Mzumbe University Package/Work/FST/My Documents/Notes/CSS 124 - Algorithms and Data Structures/Practicals/Data Structures and Algorithms Lab",
+      "environment": [],
+      "program": "h:/My Drive/Mzumbe University Package/Work/FST/My Documents/Notes/CSS 124 - Algorithms and Data Structures/Practicals/Data Structures and Algorithms Lab/build/Debug/outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
