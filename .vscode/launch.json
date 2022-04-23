@@ -5,10 +5,10 @@
       "name": "(gdb) Attach",
       "type": "cppdbg",
       "request": "attach",
-      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "program": "${workspaceFolder}/a.exe",
       "processId": "${command:pickProcess}",
       "MIMode": "gdb",
-      "miDebuggerPath": "/path/to/gdb",
+      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
       "setupCommands": [
           {
               "description": "Enable pretty-printing for gdb",
@@ -22,18 +22,19 @@
           }
       ]
     },
+
     {
       "name": "(gdb) Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "program": "${workspaceFolder}/a.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
-      "miDebuggerPath": "/path/to/gdb",
+      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
       "setupCommands": [
           {
               "description": "Enable pretty-printing for gdb",
@@ -47,6 +48,7 @@
           }
       ]
     },
+
     {
       "name": "(gdb) Bash on Windows Launch",
       "type": "cppdbg",
@@ -58,7 +60,7 @@
       "environment": [],
       "externalConsole": false,
       "pipeTransport": {
-        "debuggerPath": "/usr/bin/gdb",
+        "debuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
         "pipeProgram": "${env:windir}\\system32\\bash.exe",
         "pipeArgs": ["-c"],
         "pipeCwd": ""
@@ -76,6 +78,7 @@
           }
       ]
     },
+
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -89,7 +92,7 @@
       "program": "h:/My Drive/Mzumbe University Package/Work/FST/My Documents/Notes/CSS 124 - Algorithms and Data Structures/Practicals/Data Structures and Algorithms Lab/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
+      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
       "externalConsole": false,
       "setupCommands": [
         {
