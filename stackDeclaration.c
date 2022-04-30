@@ -9,21 +9,16 @@ int main(){
 }
 
 // initialize empty stack
-void stack()
-{
+void stack(){
     top = -1;
 }
 
 //PUSH OPERATION
 //pUSH AN ITEM ON THE STACK
-void push(int x)
-{
-    if (top == STACKSIZE - 1)
-    {
+void push(int x){
+    if (top == STACKSIZE - 1){
         printf("The stack is full");
-    }
-    else
-    {
+    }else{
         intSTACK[++top] = x;
     }
     /*
@@ -34,14 +29,10 @@ void push(int x)
 }
 
 // pop implementation
-void pop()
-{
-    if (top < 0)
-    { // or if(top==-1)
+void pop(){
+    if (top < 0){ // or if(top==-1)
         printf("stack under flow");
-    }
-    else
-    {
+    }else{
         intSTACK[top--];
     }
     /*
@@ -52,27 +43,19 @@ void pop()
 }
 
 // viewing on top element
-void top()
-{
-    if (top < 0)
-    { // or if(top==-1)
+void top(){
+    if (top < 0){ // or if(top==-1)
         printf("stack under flow");
-    }
-    else
-    {
+    }else{
         printf("%d\n", intSTACK[top]);
     }
 }
 
 // Display all elements from the stack
-void display()
-{
-    if (top < 0)
-    {
+void display(){
+    if (top < 0){
         printf(" stack empty");
-    }
-    else
-    {
+    }else{
         for (int i = top; i >= 0; i--)
             printf("%d\n", intSTACK[i]);
     }
