@@ -2,8 +2,10 @@
 int main(void)
 {
     int var1 = 1, var2 = 2, var3 = 3;
-    int const var4 = 10;
+
     // declaring and initializing constant pointer
+    int const var4 = 10;
+   
     int *const ptr = &var1;
     // declaring and initializing pointer to constant
     const int *ptr1 = &var3;
