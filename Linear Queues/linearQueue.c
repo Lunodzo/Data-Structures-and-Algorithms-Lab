@@ -5,6 +5,8 @@
 #define MAX 10
 int queue[MAX];
 int front = -1, rear = -1;
+
+//Function definition
 void insert(void);
 int delete_element(void);
 int peek(void);
@@ -13,8 +15,7 @@ void display(void);
 int main()
 {
     int option, val;
-    do
-    {
+    do{
         printf("\n\n * ****MAIN MENU * ****");
         printf("\n 1. Insert an element");
         printf("\n 2. Delete an element");
