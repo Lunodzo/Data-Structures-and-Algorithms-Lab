@@ -12,45 +12,6 @@ int delete_element(void);
 int peek(void);
 void display(void);
 
-int main()
-{
-    int option, val;
-    do{
-        printf("\n\n * ****MAIN MENU * ****");
-        printf("\n 1. Insert an element");
-        printf("\n 2. Delete an element");
-        printf("\n 3. Peek");
-        printf("\n 4. Display the queue");
-        printf("\n 5. EXIT");
-        printf("\n Enter your option: ");
-        scanf("%d", &option);
-
-        switch (option){
-            case 1:
-                insert();
-                break;
-
-            case 2:
-                val = delete_element();
-                if (val != -1)
-                    printf("\n The number deleted is: %d", val);
-                break;
-
-            case 3:
-                val = peek();
-                if (val != -1)
-                    printf("\n The first value in queue is: %d", val);
-                break;
-
-            case 4:
-                display();
-                break;
-        }
-    } while (option != 5);
-    getch();
-    return 0;
-}
-
 void insert(){
     int num;
     printf("\n Enter the number to be inserted in the queue: ");
@@ -99,4 +60,45 @@ void display(){
             printf("\t %d", queue[i]);
         }
     }
+}
+
+
+//Work with the main function
+int main()
+{
+    int option, val;
+    do{
+        printf("\n\n * ****MAIN MENU * ****");
+        printf("\n 1. Insert an element");
+        printf("\n 2. Delete an element");
+        printf("\n 3. Peek");
+        printf("\n 4. Display the queue");
+        printf("\n 5. EXIT");
+        printf("\n Enter your option: ");
+        scanf("%d", &option);
+
+        switch (option){
+            case 1:
+                insert();
+                break;
+
+            case 2:
+                val = delete_element();
+                if (val != -1)
+                    printf("\n The number deleted is: %d", val);
+                break;
+
+            case 3:
+                val = peek();
+                if (val != -1)
+                    printf("\n The first value in queue is: %d", val);
+                break;
+
+            case 4:
+                display();
+                break;
+        }
+    } while (option != 5);
+    getch();
+    return 0;
 }

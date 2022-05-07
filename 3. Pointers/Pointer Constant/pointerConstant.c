@@ -12,9 +12,9 @@ int main(void)
     // declaring and initializing pointer constant variable var4
     int *ptr2 = &var4;
     // on compilation this line gives an error b'se it is a constant pointer
-    ptr = &var2;
+    //ptr = &var2;
     // on compilation this line gives an error, why?
-    *ptr1 = 1;
+    //*ptr1 = 1;
     // on compilation this gives a warning, why?
     *ptr2 = 5;
     printf("%d\n", *ptr);

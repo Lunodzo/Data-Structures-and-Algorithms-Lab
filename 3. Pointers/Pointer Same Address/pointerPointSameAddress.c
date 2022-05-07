@@ -1,8 +1,7 @@
 #include <stdio.h>
 int main(){
-    int x;
+    int x = 1234;
     int *ptr_1, *ptr_2, *ptr_3;
-    x = 1234;
 
     // printing the value and address of x variable
     printf("x: address=0x%p, content=%d\n", &x, x);

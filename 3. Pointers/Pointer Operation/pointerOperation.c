@@ -13,8 +13,8 @@ int main(void)
     
     // pointer addition
     ptr3 = ptr1 + 4;
-    printf("\nadding an int to a pointer:\n");
-    printf("ptr1 + 4 = %p, *(ptr4 + 3) = %d\n", ptr1 + 4, *(ptr1 + 3));
+    printf("\nAdding an int to a pointer:\n");
+    printf("ptr1 + 4 = %p, *(ptr+ 3) = %d\n", ptr1 + 4, *(ptr1 + 3));
 
     ptr1++; // increment a pointer
     printf("\nvalues after ptr1++:\n");
