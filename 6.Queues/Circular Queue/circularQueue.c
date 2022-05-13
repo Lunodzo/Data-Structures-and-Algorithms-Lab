@@ -3,7 +3,7 @@
 
 #define MAX 10
 int queue[MAX];
-int front = –1, rear = –1;
+int front = -1, rear = -1;
 
 //Functions
 void insert(void);
